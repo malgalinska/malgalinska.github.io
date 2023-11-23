@@ -1,59 +1,72 @@
-import { Anchor, Row, Col, ConfigProvider} from 'antd';
-import React from 'react';
+import { Anchor, Row, Col, Layout, theme } from 'antd';
+
 import './App.css';
 import Home from '../home/Home';
 import About from '../about/About';
 import Experience from '../experience/Experience';
-import { relative } from 'path';
+
+const { Content, Footer, Sider } = Layout;
 
 function Menu() {
   return (
-    <Anchor
-      items={[
-        {
-          key: 'home',
-          href: '#home',
-          title: 'Home',
-        },
-        {
-          key: 'about',
-          href: '#about',
-          title: 'About',
-        },
-        {
-          key: 'experience',
-          href: '#experience',
-          title: 'Experience',
-        },
-      ]}
-    />
+    <div style={{ maxHeight: '90vh', marginTop: '100px'}}>
+      <Anchor
+        items={[
+          {
+            key: 'home',
+            href: '#home',
+            title: 'Home',
+          },
+          {
+            key: 'about',
+            href: '#about',
+            title: 'About',
+          },
+          {
+            key: 'experience',
+            href: '#experience',
+            title: 'Experience',
+          },
+        ]}
+      />
+    </div>
   );
 }
 
 function App() {
+  const {
+    token: { colorBgBase },
+  } = theme.useToken();
+
   return (
-    <div className="App" style={{background: 'rgba(255,0,0,0.02)'}}>
-      <ConfigProvider
-        theme={{
-          token: {
-            fontFamily: 'Montserrat',
-          },
-        }}
-      >
-        <Row gutter={16}>
-          <Col span={4} />
-          <Col span={16}>
+    <div className='App'>
+      <Layout>
+        <Layout hasSider>
+          <Sider style={{ background: colorBgBase }}/>
+          <Content style={{ background: colorBgBase, maxWidth: 'calc(100vw - 400px)'}}>
             <Home />
             <About />
             <Experience />
-          </Col>
-          <Col span={4}>
-            <div style={{ marginTop: '8vh', marginRight: '8vh' }}>
-              <Menu />
-            </div>
-          </Col>
-        </Row>
-      </ConfigProvider>
+          </Content>
+          <Sider
+            style={{
+              background: colorBgBase,
+              overflow: 'auto',
+              height: '100vh',
+              position: 'fixed',
+              right: 0,
+              top: 0,
+              bottom: 0,
+              zIndex: '0'
+            }}        
+          >
+            <Menu />
+          </Sider>
+        </Layout>
+        <Footer style={{ textAlign: 'center', zIndex: '3' }}>
+          ©2023 Created by Małgorzata Galińska
+        </Footer>
+      </Layout>
     </div>
   );
 }

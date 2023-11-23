@@ -14,17 +14,17 @@ function LoremIpsum() {
 
 function About() {
   return (
-    <div id="about" style={{ minHeight: '80vh', paddingTop: '20vh' }}>
+    <div id='about' style={{ minHeight: '100vh', paddingTop: '20vh' }}>
       <div style={{maxWidth: '20cm', margin: 'auto', textAlign: 'justify'}} >
         <Title style={{textAlign: 'center'}}> About </Title>
         <Paragraph>
           <LoremIpsum />
         </Paragraph>
-        <Divider orientation="left">My story</Divider>
+        <Divider orientation='left'>My story</Divider>
         <Paragraph>
           <LoremIpsum />
         </Paragraph>
-        <Divider orientation="right">Hobbies</Divider>
+        <Divider orientation='right'>Hobbies</Divider>
         <Paragraph>
           <LoremIpsum />
         </Paragraph>
