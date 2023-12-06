@@ -12,7 +12,7 @@ const { Title } = Typography;
 function Home() {
   return (
     <div id='home' style={{ minHeight: '100vh', paddingTop: '20vh' }}>
-      <Flex justify='center' align='start' wrap="wrap" style={{ minHeight: '70vh', width: '100%'}}>
+      <Flex justify='center' align='start' wrap='wrap' style={{ minHeight: '70vh', width: '100%'}}>
         <div id='profile_picture_container' style={{minWidth: '320px'}}>
           <img src={rose_profile}/>
           <img src={green_profile}/>

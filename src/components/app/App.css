@@ -1,0 +1,17 @@
+#menu {
+    visibility: hidden;
+    position: fixed;
+    top: 32px;
+    inset-inline-end: 0;
+    margin-right: 32px;
+    z-index: 3;
+    background-color: #ffe8d5a0;
+    padding: 32px;
+    border-radius: 20% 40% 50% 60%;
+}
+
+@media only screen and (min-height: 650px) {
+    #menu {
+        visibility: visible;
+    }
+}

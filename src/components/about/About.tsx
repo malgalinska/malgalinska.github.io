@@ -10,7 +10,7 @@ const { Title, Paragraph } = Typography;
 function About() {
   return (
     <div id='about' style={{ minHeight: '100vh', paddingTop: '20vh' }}>
-      <div style={{maxWidth: '20cm', margin: 'auto', textAlign: 'justify'}} >
+      <div style={{width: '20cm', maxWidth: '90vw', margin: 'auto', textAlign: 'justify'}} >
         <Title style={{textAlign: 'center'}}> About </Title>
         <Paragraph>
           <LoremIpsum />

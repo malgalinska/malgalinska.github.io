@@ -1,11 +1,7 @@
 #profile_picture_container {
     position: relative;
-    /* margin-left: auto; */
-    /* margin-right: 100px; */
     width: 350px;
     height: 400px;
-    /* max-height: 70vh; */
-    /* margin-top: 150px; */
     transform: scale(0.8);
     transition: 0.5s;
 }
@@ -16,54 +12,23 @@
     margin-bottom: 24px;
 }
 
-@media (min-width: 650px) {
+@media only screen and (min-width: 1250px) {
     #profile_picture_container {
-        position: relative;
-        /* margin-left: auto; */
-        /* margin-right: 100px; */
-        width: 350px;
-        transform: scale(0.8);
-        transition: 0.5s;
-    }
-
-    #title {
-        font-family: 'Poiret One';
-        font-size: 60px;
-        margin-bottom: 24px;
-    }
-}
-
-@media (min-width: 1250px) {
-    #profile_picture_container {
-        position: relative;
-        /* margin-left: auto; */
-        /* margin-right: 100px; */
         width: 500px;
-        transform: scale(0.8);
-        transition: 0.5s;
     }
 
     #title {
-        font-family: 'Poiret One';
         font-size: 100px;
-        margin-bottom: 24px;
     }
 }
 
-@media (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
     #profile_picture_container {
-        position: relative;
-        /* margin-left: auto; */
-        /* margin-right: 100px; */
         width: 680px;
-        transform: scale(0.8);
-        transition: 0.5s;
     }
 
     #title {
-        font-family: 'Poiret One';
         font-size: 120px;
-        margin-bottom: 24px;
     }
 }
 

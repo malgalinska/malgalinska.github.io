@@ -10,7 +10,7 @@ const { Footer } = Layout;
 
 function Menu() {
   return (
-    <div style={{ position: 'fixed', top: '120px', insetInlineEnd: 0, marginRight: '80px'}}>
+    <div id='menu'>
         <Anchor
           items={[
             {

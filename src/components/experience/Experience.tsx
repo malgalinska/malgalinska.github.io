@@ -17,26 +17,26 @@ function Experience() {
   const [linkedSkills, setLinkedSkills] = useState(['']);
 
   return (
-    <div id='experience' style={{ minHeight: '100vh', paddingTop: '20vh', maxWidth: '90%', margin:'auto' }}>
+    <div id='experience' style={{ minHeight: '100vh', paddingTop: '20vh', maxWidth: '90vw', margin:'auto' }}>
       <Title> Experience </Title>
-      <Row gutter={16}>
-        <Col span={8}>
+      <Row gutter={[16, 16]}>
+        <Col xs={24} md={8}>
           <Card title='Ruby on Rails Developer' hoverable
-            onMouseEnter={() => setLinkedSkills(['Ruby', 'Ruby on Rails', 'JavaScript', 'HTML', 'MySQL', 'Git', 'Docker', 'Docker Compose', 'REST', 'Linux'])}>
-          <Paragraph><LoremIpsum /></Paragraph>
+              onMouseEnter={() => setLinkedSkills(['Ruby', 'Ruby on Rails', 'JavaScript', 'HTML', 'MySQL', 'Git', 'Docker', 'Docker Compose', 'REST', 'Linux'])}>
+            <Paragraph><LoremIpsum /></Paragraph>
             {/* Part-time work on projects: Intum, Siteor, Fakturownia. Programming in Ruby using JavaScript, HTML, and MySQL. Using Git, Docker, and Docker Compose. */}
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} md={8}>
           <Card title='Algorithmics tutor' hoverable
-            onMouseEnter={() => setLinkedSkills(['C++', 'Algorithms', 'Git'])}>
+              onMouseEnter={() => setLinkedSkills(['C++', 'Algorithms', 'Git'])}>
             <Paragraph><LoremIpsum /></Paragraph>
-          {/* Conducting additional classes at the XIV LO in Warsaw during the school year and at holiday camps. Teaching algorithms and their implementation in C++ and preparing students to participate in the Olympiad in Informatics. Coordinating teamwork. */}
+            {/* Conducting additional classes at the XIV LO in Warsaw during the school year and at holiday camps. Teaching algorithms and their implementation in C++ and preparing students to participate in the Olympiad in Informatics. Coordinating teamwork. */}
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} md={8}>
           <Card title='Graduate' hoverable
-            onMouseEnter={() => setLinkedSkills(['Python', 'HTML', 'CSS', 'TypeScript', 'PostreSQL', 'C', 'C++',
+              onMouseEnter={() => setLinkedSkills(['Python', 'HTML', 'CSS', 'TypeScript', 'PostreSQL', 'C', 'C++',
               'Git', 'Linux', 'Bash', 'Haskell', 'Prolog', 'Algorithms'])}>
             <Paragraph><LoremIpsum /></Paragraph>
             {/* I have graduate my master's degree in September 2023 with GPA 3.65. */}
