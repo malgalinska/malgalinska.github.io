@@ -1,11 +1,13 @@
 import { Typography, Button, Flex, Col, Row} from 'antd';
+import React from 'react';
+
 import './Home.css';
 import true_profile from '../../assets/images/true_profile.png';
 import green_profile from '../../assets/images/green_profile.png';
 import rose_profile from '../../assets/images/rose_profile.png';
-import cv_file from '../../assets/pdf/Malgorzata_Galinska_Resume.pdf'
+import cv_file from '../../assets/pdf/Malgorzata_Galinska_Resume.pdf';
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title } = Typography;
 
 function Home() {
   return (
@@ -25,7 +27,7 @@ function Home() {
       </Row>
       <Flex wrap='wrap' gap='small' justify='center'>
         <Button shape='round' href='https://www.linkedin.com/in/malgorzata-galinska/' target='_blank'>LinkedIn</Button>
-        <a href={cv_file} download="Malgorzata_Galinska_Resume" target='_blank'>
+        <a href={cv_file} download='Malgorzata_Galinska_Resume' target='_blank'>
           <Button type='primary' shape='round' >
             Download CV
           </Button>
