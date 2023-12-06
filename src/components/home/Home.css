@@ -1,10 +1,70 @@
 #profile_picture_container {
     position: relative;
-    /* width: 360px;
-    height: 640px; */
+    /* margin-left: auto; */
+    /* margin-right: 100px; */
+    width: 350px;
+    height: 400px;
+    /* max-height: 70vh; */
     /* margin-top: 150px; */
     transform: scale(0.8);
     transition: 0.5s;
+}
+
+#title {
+    font-family: 'Poiret One';
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 650px) {
+    #profile_picture_container {
+        position: relative;
+        /* margin-left: auto; */
+        /* margin-right: 100px; */
+        width: 350px;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    #title {
+        font-family: 'Poiret One';
+        font-size: 60px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1250px) {
+    #profile_picture_container {
+        position: relative;
+        /* margin-left: auto; */
+        /* margin-right: 100px; */
+        width: 500px;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    #title {
+        font-family: 'Poiret One';
+        font-size: 100px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #profile_picture_container {
+        position: relative;
+        /* margin-left: auto; */
+        /* margin-right: 100px; */
+        width: 680px;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    #title {
+        font-family: 'Poiret One';
+        font-size: 120px;
+        margin-bottom: 24px;
+    }
 }
 
 #profile_picture_container img {
@@ -14,33 +74,32 @@
 }
 
 #profile_picture_container img:nth-child(3) {
-    transform: translate(36px, 0);
+    transform: translate(6%, 0);
 }
 
 #profile_picture_container img:nth-child(2) {
-    transform: translate(24px, 4px);
+    transform: translate(4%, 4px);
 }
 
 #profile_picture_container img:nth-child(1) {
-    transform: translate(12px, 8px);
+    transform: translate(2%, 8px);
 }
 
 
 #profile_picture_container:hover img:nth-child(3) {
-    transform: translate(120px, 0);
+    transform: translate(18%, 0);
 }
 
 #profile_picture_container:hover img:nth-child(2) {
-    transform: translate(80px, 0);
+    transform: translate(12%, 0);
     opacity: 0.8;
 }
 
 #profile_picture_container:hover img:nth-child(1) {
-    transform: translate(40px, 0);
+    transform: translate(6%, 0);
     opacity: 0.8;
 }
 
-#title {
-    font-family: 'Poiret One';
-    font-size: 120px;
+#subtitle {
+    margin-top: 24px;
 }
