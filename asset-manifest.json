@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb89ada6.css",
-    "main.js": "/static/js/main.996a122b.js",
+    "main.css": "/static/css/main.1acd7145.css",
+    "main.js": "/static/js/main.6a17dba1.js",
     "static/js/787.7887cb61.chunk.js": "/static/js/787.7887cb61.chunk.js",
     "static/media/true_profile.png": "/static/media/true_profile.bfcc97e0ebb6150ae2a1.png",
-    "static/media/Malgorzata_Galinska_Resume.pdf": "/static/media/Malgorzata_Galinska_Resume.65a3a8dd91c7df9e7624.pdf",
+    "static/media/Malgorzata_Galinska_Resume.pdf": "/static/media/Malgorzata_Galinska_Resume.ef05bafd4fc24d78aa04.pdf",
     "static/media/green_profile.png": "/static/media/green_profile.7b1d26f0e8e318742a48.png",
     "static/media/rose_profile.png": "/static/media/rose_profile.1043dd10ee254c8e5593.png",
     "index.html": "/index.html",
-    "main.fb89ada6.css.map": "/static/css/main.fb89ada6.css.map",
-    "main.996a122b.js.map": "/static/js/main.996a122b.js.map",
+    "main.1acd7145.css.map": "/static/css/main.1acd7145.css.map",
+    "main.6a17dba1.js.map": "/static/js/main.6a17dba1.js.map",
     "787.7887cb61.chunk.js.map": "/static/js/787.7887cb61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb89ada6.css",
-    "static/js/main.996a122b.js"
+    "static/css/main.1acd7145.css",
+    "static/js/main.6a17dba1.js"
   ]
 }
