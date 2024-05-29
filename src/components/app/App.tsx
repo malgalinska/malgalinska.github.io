@@ -43,7 +43,7 @@ function App() {
         <About />
         <Experience />
         <Footer style={{ textAlign: 'center', zIndex: '3' }}>
-          ©2023 Created by Małgorzata Galińska
+          ©2024 Created by Małgorzata Galińska
         </Footer>
       </Layout>
     </div>

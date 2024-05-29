@@ -57,12 +57,10 @@
 
 #profile_picture_container:hover img:nth-child(2) {
     transform: translate(12%, 0);
-    opacity: 0.8;
 }
 
 #profile_picture_container:hover img:nth-child(1) {
     transform: translate(6%, 0);
-    opacity: 0.8;
 }
 
 #subtitle {

@@ -16,7 +16,7 @@ function Home() {
         <div id='profile_picture_container' style={{minWidth: '320px'}}>
           <img src={rose_profile}/>
           <img src={green_profile}/>
-          <img src={true_profile}/>
+          <img src={true_profile} alt='Profile picture'/>
         </div>
         <div style={{minWidth: '320px'}}>
           <Title id='title'>  Małgorzata<br/>Galińska </Title>
